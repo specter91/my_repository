@@ -16,11 +16,21 @@
 @import 'base/mixins';
 
 /* Vendor */
+@import 'base/global';
 
 /* Components */
+
+/* Sections */
+@import 'sections/header';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
 /* Demo Page styles */
 @import 'demo';
+
+@import 'main';
+
+
+
+
