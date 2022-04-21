@@ -1,5 +1,84 @@
 .header-main{
     background: url('../images/content/image-for-project.jpg');
     background-size: cover;
+    background-position: top right;
     min-height: 100vh;
+}
+.header-bar {
+    height: 104px; 
+    display: flex;
+    align-items: center;   
+
+    &__logo { // .header-bar__logo
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: $text-color;
+
+        transition: opacity .5s ease;
+
+        // .header-bar__logo:hover
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    &__menu {
+        margin-left: 100px;
+    }
+
+    &__menu-item {
+        display: inline-block;
+
+        /*&:not(:last-child) {
+            margin-right: 21px;
+        }*/
+
+        & + & {
+            margin-left: 21px;
+        }
+    }
+
+    &__menu-link {
+        color: $second-text-color;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+
+        transition: color .5s ease;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+}
+
+.header-hero {
+    &__title {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+        
+        color: $text-color;
+
+        text-transform: uppercase;
+
+        max-width: 509px;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+   
+        color: $second-text-color;
+
+        margin: 35px 0;
+        max-width: 376px;
+    }
 }

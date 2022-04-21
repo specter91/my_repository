@@ -16,9 +16,9 @@
 @import 'base/mixins';
 
 /* Vendor */
-@import 'base/global';
 
-/* Components */
+/* GLobal */
+@import 'base/global';
 
 /* Sections */
 @import 'sections/header';
@@ -27,8 +27,9 @@
 @import 'dirty/hacks';
 
 /* Demo Page styles */
-@import 'demo';
+/* @import 'demo'; */
 
+/* Main style file */
 @import 'main';
 
 
